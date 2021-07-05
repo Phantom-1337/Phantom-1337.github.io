@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" style="filter: blur(0px);opacity: 1;">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <link rel="stylesheet" href="assets/css/styles.min.css?h=5e50727777cdbfe014eee17e6de604d3">
+</head>
+
+
+<style>
+	body {
+		overflow: hidden;
+	}
+</style>
+
+<style>
+
+.btn__login{
+    cursor:pointer;
+    transition:background-color .2s,color .2s,border-color .2s;
+    font-style:normal;
+    font-weight:600;
+    font-size:13px;
+    line-height:24px;
+    outline:none;
+    width:120px;
+    height:48px;
+    border:2px solid #33353d;
+    border-radius:24px;
+    background-color:rgba(145,199,80,0);
+    color:#000000
+}
+.btn__login:hover{
+    background-color:#91c750;
+    border-color:rgba(51,53,61,0);
+    color:#fafafa
+}
+
+@-webkit-keyframes fadeIn{
+    0%{
+        opacity:0
+    }
+}
+@keyframes fadeIn{
+    0%{
+        opacity:0
+    }
+}
+@-webkit-keyframes fadeOut{
+    to{
+        opacity:0
+    }
+}
+@keyframes fadeOut{
+    to{
+        opacity:0
+    }
+}
+@-webkit-keyframes fadeInDown{
+    0%{
+        opacity:0;
+        transform:translate3d(0,-100%,0)
+    }
+    to{
+        opacity:1;
+        transform:none
+    }
+}
+@keyframes fadeInDown{
+    0%{
+        opacity:0;
+        transform:translate3d(0,-100%,0)
+    }
+    to{
+        opacity:1;
+        transform:none
+    }
+}
+@-webkit-keyframes fadeInLeft{
+    0%{
+        opacity:0;
+        transform:translate3d(-100%,0,0)
+    }
+    to{
+        opacity:1;
+        transform:translateZ(0)
+    }
+}
+@keyframes fadeInLeft{
+    0%{
+        opacity:0;
+        transform:translate3d(-100%,0,0)
+    }
+    to{
+        opacity:1;
+        transform:translateZ(0)
+    }
+}
+@-webkit-keyframes fadeInRight{
+    0%{
+        opacity:0;
+        transform:translate3d(100%,0,0)
+    }
+    to{
+        opacity:1;
+        transform:translateZ(0)
+    }
+}
+@keyframes fadeInRight{
+    0%{
+        opacity:0;
+        transform:translate3d(100%,0,0)
+    }
+    to{
+        opacity:1;
+        transform:translateZ(0)
+    }
+}
+@-webkit-keyframes fadeInUp{
+    0%{
+        opacity:0;
+        transform:translate3d(0,100%,0)
+    }
+    to{
+        opacity:1
+    }
+}
+@keyframes fadeInUp{
+    0%{
+        opacity:0;
+        transform:translate3d(0,100%,0)
+    }
+    to{
+        opacity:1
+    }
+}
+@-webkit-keyframes fadeOutDown{
+    0%{
+        opacity:1
+    }
+    to{
+        opacity:0;
+        transform:translate3d(0,100%,0)
+    }
+}
+@keyframes fadeOutDown{
+    0%{
+        opacity:1
+    }
+    to{
+        opacity:0;
+        transform:translate3d(0,100%,0)
+    }
+}
+@-webkit-keyframes fadeOutLeft{
+    0%{
+        opacity:1
+    }
+    to{
+        opacity:0;
+        transform:translate3d(-100%,0,0)
+    }
+}
+@keyframes fadeOutLeft{
+    0%{
+        opacity:1
+    }
+    to{
+        opacity:0;
+        transform:translate3d(-100%,0,0)
+    }
+}
+@-webkit-keyframes fadeOutUp{
+    0%{
+        opacity:1
+    }
+    to{
+        opacity:0;
+        transform:translate3d(0,-100%,0)
+    }
+}
+@keyframes fadeOutUp{
+    0%{
+        opacity:1
+    }
+    to{
+        opacity:0;
+        transform:translate3d(0,-100%,0)
+    }
+}
+@-webkit-keyframes fadeOutRight{
+    0%{
+        opacity:1
+    }
+    to{
+        opacity:0;
+        transform:translate3d(100%,0,0)
+    }
+}
+@keyframes fadeOutRight{
+    0%{
+        opacity:1
+    }
+    to{
+        opacity:0;
+        transform:translate3d(100%,0,0)
+    }
+}
+.fadeInDown500ms{
+    opacity:0;
+    -webkit-animation:fadeInDown .4s forwards;
+    animation:fadeInDown .4s forwards
+}
+.fadeInUp500ms{
+    opacity:0;
+    -webkit-animation:fadeInUp .4s forwards;
+    animation:fadeInUp .4s forwards
+}
+.fadeIn500ms{
+    -webkit-animation:fadeIn .4s forwards;
+    animation:fadeIn .4s forwards
+}
+.fadeInLeft500ms{
+    opacity:0;
+    -webkit-animation:fadeInLeft .4s forwards;
+    animation:fadeInLeft .4s forwards
+}
+.fadeInRight500ms{
+    opacity:0;
+    -webkit-animation:fadeInRight .4s forwards;
+    animation:fadeInRight .4s forwards
+}
+.fadeOutDown500ms{
+    opacity:1;
+    -webkit-animation:fadeOutDown .4s forwards;
+    animation:fadeOutDown .4s forwards
+}
+.fadeOutLeft500ms{
+    opacity:1;
+    -webkit-animation:fadeOutLeft .4s forwards;
+    animation:fadeOutLeft .4s forwards
+}
+.fadeOutRight500ms{
+    opacity:1;
+    -webkit-animation:fadeOutRight .4s forwards;
+    animation:fadeOutRight .4s forwards
+}
+.fadeOutUp500ms{
+    opacity:1;
+    -webkit-animation:fadeOutUp .4s forwards;
+    animation:fadeOutUp .4s forwards
+}
+
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script>
+jQuery(document).ready(function(){
+jQuery(this).scrollTop(0);
+});
+</script>
+
+    <style>
+      input::-ms-reveal,
+      input::-ms-clear {
+        display: none;
+      }
+    </style>
+
+<body style="background: url(&quot;https://images6.alphacoders.com/606/606928.jpg&quot;) no-repeat, #010012;height: 730px;filter: blur(0px);" class="fadeIn500ms">
+    <nav class="navbar navbar-light navbar-expand-md" style="background: rgba(255,255,255,0.12);">
+        <div class="container-fluid"><a class="navbar-brand" href="#" style="color: rgba(255,255,255,0.9);font-family: MonoLisa;margin-left: 10px;margin-top: 0px;">/home/discover/documents</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                </ul>
+            </div>
+        </div>
+    </nav><!-- Start: 1 Row 1 Column -->
+    <div class="container">
+        <div class="row" style="margin-top: 320px;">
+            <div class="col-md-12">
+                <div class="jumbotron" style="background: rgba(255,255,255,0.12);width: 764px;margin: auto;">
+                    <p class="text-center" style="color: rgb(255,255,255);font-family: MonoLisa;">Welcome to my home page!<br>Feel free to DM me in Discord if you have any questions!<br>Discord: discover#9999</p>
+                    <div class="col"><a style="text-decoration: none;" href="https://discord.gg/H2j7znJaZq"><button class="btn__login" type="button" style="display: block;margin: auto;">discord server</button></a></div>
+            </div>
+        </div>
+    </div><!-- End: 1 Row 1 Column -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/script.min.js?h=8e629d3ba44e884d1fbef5fb7719e6f1"></script>
+</body>
+
+</html>
